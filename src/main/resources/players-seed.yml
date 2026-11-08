@@ -1,0 +1,252 @@
+players:
+  2ec21cb8-5617-449e-a007-63ba8a7ac277:
+    name: q5xzn
+    money: 1000.0
+    crystals: 0
+    gems: 0
+    kills: 0
+    deaths: 0
+    playtime: 540
+    lastDaily: 0
+    dailyStreak: 0
+    scoreboardOff: false
+    keys:
+      common: 1
+    kits:
+      starter: 1793374120090
+      daily: 1793374118600
+  9c929067-374d-4538-a93b-0786566bc773:
+    name: ShadowKn8
+    money: 1580.0
+    crystals: 0
+    gems: 0
+    kills: 0
+    deaths: 1
+    playtime: 3060
+    lastDaily: 1793354042190
+    dailyStreak: 1
+    scoreboardOff: false
+    keys:
+      common: 1
+    kits:
+      starter: 1793353334797
+      daily: 1793353333899
+  5e9e0798-c588-4fd7-8622-cc357cdd2934:
+    name: zGurkez
+    money: 2000.0
+    crystals: 1
+    gems: 0
+    kills: 0
+    deaths: 0
+    playtime: 180
+    lastDaily: 0
+    dailyStreak: 0
+    scoreboardOff: false
+  2d0e5afa-d8f4-4e1a-bf70-5b0f8d492f05:
+    name: Perplexitix
+    money: 1000.0
+    crystals: 0
+    gems: 0
+    kills: 0
+    deaths: 0
+    playtime: 0
+    lastDaily: 0
+    dailyStreak: 0
+    scoreboardOff: false
+  dbd751f8-fc6d-42f7-b1d3-b3562e193763:
+    name: Gamerprokayosm
+    money: 9719024.0
+    crystals: 18785
+    gems: 0
+    kills: 4
+    deaths: 4
+    playtime: 25560
+    lastDaily: 1793367569295
+    dailyStreak: 1
+    scoreboardOff: false
+    rank: media
+    keys:
+      adminabuse: 27
+    homes:
+      stronghold: world,1517.414508665773,-22.0,1371.8936888129756,159.07532,16.799694
+      trial: world,-2712.6215397676838,-32.5,-2076.055716794626,-174.49808,57.6
+      villi: world,1688.6125254838055,71.0,-277.711868799074,81.39514,51.29981
+      villi2: world,-2983.699999988079,63.0,-770.3000000119209,27.943787,50.937664
+    kits:
+      elite: 1793398901316
+      premium: 1793398902574
+      starter: 1793398907178
+      mvp: 1793398900120
+      daily: 1793398906982
+      vip: 1793398861174
+      vip-gear: 1793398841178
+      mvp-gear: 1793398855365
+      ultra-gear: 1793398846186
+      weekly: 1793398906803
+      ultra: 1793398898501
+  5eda2f00-8f47-49ca-b86f-838beef3830d:
+    name: EinfxchFred
+    money: 1000.0
+    crystals: 0
+    gems: 0
+    kills: 0
+    deaths: 0
+    playtime: 120
+    lastDaily: 0
+    dailyStreak: 0
+    scoreboardOff: false
+  a3563912-9f77-454c-8b51-8f868ed4d531:
+    name: EinfachLukeV1
+    money: 1500.0
+    crystals: 0
+    gems: 0
+    kills: 0
+    deaths: 0
+    playtime: 1500
+    lastDaily: 1793378621043
+    dailyStreak: 1
+    scoreboardOff: false
+    keys:
+      common: 1
+  ce158427-17e1-489b-8668-918ec5df6c00:
+    name: Lilabell787
+    money: 5700.0
+    crystals: 8682
+    gems: 0
+    kills: 0
+    deaths: 1
+    playtime: 8700
+    lastDaily: 0
+    dailyStreak: 0
+    scoreboardOff: false
+    rank: admin
+    keys:
+      common: 2
+  494d9528-093d-46cd-8c4e-aa66ec42608c:
+    name: FakeNitronik
+    money: 1.2141664E7
+    crystals: 3228
+    gems: 0
+    kills: 0
+    deaths: 28
+    playtime: 27060
+    lastDaily: 1793345120647
+    dailyStreak: 1
+    scoreboardOff: false
+    rank: mvp
+    keys:
+      common: 5
+    kits:
+      elite: 1793347017201
+      premium: 1793347017813
+      starter: 1793347019141
+      mvp: 1793347016653
+      daily: 1793347018241
+  82b427ad-55e2-4d00-b774-59eb0e3483e3:
+    name: jojo7534
+    money: 1500.0
+    crystals: 0
+    gems: 0
+    kills: 0
+    deaths: 0
+    playtime: 180
+    lastDaily: 1793365063694
+    dailyStreak: 1
+    scoreboardOff: false
+  ffe40a2d-7a82-4618-a802-5787e003012d:
+    name: xCrazySquizyyYT
+    money: 5.7101185E7
+    crystals: 86909
+    gems: 3800
+    kills: 21
+    deaths: 8
+    playtime: 71820
+    lastDaily: 1793336488416
+    dailyStreak: 1
+    scoreboardOff: false
+    rank: owner
+    keys:
+      special: 2
+      adminabuse: 1
+      common: 4
+      mythic: 1
+      legendary: 1
+      rare: 2
+      epic: 1
+    homes:
+      stash: world,2211.6191699325504,-20.74479775889327,888.5891364721425,-104.69821,19.349981
+      aa: world,2.4361519987852014,91.0,1.5705604304345424,94.802,87.3
+      grabgame: world,-562.8768725848497,95.95965185207417,4469.52476836078,-85.7932,17.700005
+      endcity: world_the_end,-644.664421753902,57.0,-1084.7872944158519,42.14917,18.150026
+    kits:
+      staff: 1793398779212
+      media: 1793398939445
+  cd150ee8-228e-4fc8-882b-3dc597a310ce:
+    name: melle1234321
+    money: 1541567.5
+    crystals: 891
+    gems: 0
+    kills: 0
+    deaths: 7
+    playtime: 20940
+    lastDaily: 1793371332043
+    dailyStreak: 1
+    scoreboardOff: false
+    keys:
+      adminabuse: 3
+      common: 4
+      rare: 1
+    homes:
+      '1': world,-1812.300000011921,35.0,480.0048563097252,42.9917,37.390472
+      '3': world,-1814.699999988079,35.0,480.7583860220641,-33.92985,49.658752
+    kits:
+      starter: 1793374178534
+      daily: 1793374177490
+  e322fa35-ff6b-4edc-a957-064ee7d097b3:
+    name: Oscar_IG
+    money: 1000.0
+    crystals: 0
+    gems: 0
+    kills: 0
+    deaths: 0
+    playtime: 60
+    lastDaily: 0
+    dailyStreak: 0
+    scoreboardOff: false
+  1a59f535-d4c0-4f22-a15e-faade7d573d3:
+    name: Rexfloris
+    money: 18590.0
+    crystals: 10
+    gems: 0
+    kills: 0
+    deaths: 0
+    playtime: 1020
+    lastDaily: 0
+    dailyStreak: 0
+    scoreboardOff: false
+    keys:
+      common: 1
+    homes:
+      home: world,584.278595247038,72.0,-4147.686351838753,134.42607,13.350003
+  5976ed36-c5c8-4318-bfb5-a55b73a6ae86:
+    name: Bongo9
+    money: 1000.0
+    crystals: 0
+    gems: 0
+    kills: 0
+    deaths: 0
+    playtime: 60
+    lastDaily: 0
+    dailyStreak: 0
+    scoreboardOff: false
+  4ac3069b-1055-4104-a56d-92272df58d69:
+    name: Nazar976
+    money: 1500.0
+    crystals: 0
+    gems: 0
+    kills: 0
+    deaths: 0
+    playtime: 420
+    lastDaily: 1793375565043
+    dailyStreak: 1
+    scoreboardOff: false

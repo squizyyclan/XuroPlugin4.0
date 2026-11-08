@@ -1,0 +1,201 @@
+# Kits: /kit (Menü mit Vorschau) oder /kit <id>.  /kit preview <id> zeigt alle Items.
+# cooldown in Sekunden: -1 = nur einmal, 0 = jederzeit.  permission leer = für alle.
+# Rang-Kits: Ränge erhalten smpcore.kit.<rang> automatisch (ranks.yml, wird nach oben vererbt).
+# Items: material, amount, name, lore, unbreakable, enchants (Name: Stufe), trim (pattern + material, nur Rüstung),
+#        effects (nur POTION, z.B. strength: {seconds: 180, level: 2}).
+# Trim-Muster: sentry dune coast wild ward eye vex tide snout rib spire wayfinder shaper silence raiser host flow bolt
+# Trim-Materialien: quartz iron netherite redstone copper gold emerald diamond lapis amethyst resin
+# Rüstung wird automatisch angezogen, wenn der Slot frei ist (equip: false pro Kit schaltet das ab).
+# Elytra stehen auf der shop-blacklist und werden aus Kits automatisch entfernt.
+kits:
+  starter:
+    name: "<green><bold>Starter-Kit"
+    icon: IRON_PICKAXE
+    cooldown: -1
+    permission: "smpcore.kit.starter"
+    description: ["<gray>Dein Start auf dem Server – nur <white>einmal<gray>!"]
+    items:
+      - {material: IRON_HELMET, name: "<green>Starter-Helm", trim: {pattern: dune, material: copper}, enchants: {protection: 1, unbreaking: 1}}
+      - {material: IRON_CHESTPLATE, name: "<green>Starter-Brustplatte", trim: {pattern: dune, material: copper}, enchants: {protection: 1, unbreaking: 1}}
+      - {material: IRON_LEGGINGS, name: "<green>Starter-Hose", trim: {pattern: dune, material: copper}, enchants: {protection: 1, unbreaking: 1, swift_sneak: 3}}
+      - {material: IRON_BOOTS, name: "<green>Starter-Stiefel", trim: {pattern: dune, material: copper}, enchants: {protection: 1, unbreaking: 1}}
+      - {material: IRON_SWORD, name: "<green>Starter-Schwert", enchants: {sharpness: 1, unbreaking: 1}}
+      - {material: IRON_PICKAXE, name: "<green>Starter-Spitzhacke", enchants: {efficiency: 2, unbreaking: 1}}
+      - {material: IRON_AXE, name: "<green>Starter-Axt", enchants: {efficiency: 2, unbreaking: 1}}
+      - {material: IRON_SHOVEL, name: "<green>Starter-Schaufel", enchants: {efficiency: 2, unbreaking: 1}}
+      - {material: COOKED_BEEF, amount: 32}
+      - {material: BREAD, amount: 16}
+      - {material: TORCH, amount: 64}
+      - {material: OAK_LOG, amount: 32}
+  daily:
+    name: "<yellow><bold>Tägliches Kit"
+    icon: CHEST
+    cooldown: 86400
+    permission: ""
+    description: ["<gray>Jeden Tag kostenlos für alle Spieler."]
+    items:
+      - {material: COOKED_BEEF, amount: 32}
+      - {material: BREAD, amount: 16}
+      - {material: IRON_INGOT, amount: 16}
+      - {material: GOLD_INGOT, amount: 8}
+      - {material: EXPERIENCE_BOTTLE, amount: 16}
+      - {material: GOLDEN_APPLE}
+  weekly:
+    name: "<aqua><bold>Wöchentliches Kit"
+    icon: ENDER_CHEST
+    cooldown: 604800
+    permission: ""
+    description: ["<gray>Einmal pro Woche für alle Spieler."]
+    items:
+      - {material: DIAMOND, amount: 8}
+      - {material: GOLDEN_APPLE, amount: 4}
+      - {material: EXPERIENCE_BOTTLE, amount: 64}
+      - {material: ENDER_PEARL, amount: 8}
+      - {material: COOKED_BEEF, amount: 64}
+      - {material: DIAMOND_BLOCK}
+  premium:
+    name: "<green><bold>PREMIUM-Kit"
+    icon: GOLDEN_CARROT
+    cooldown: 86400
+    permission: "smpcore.kit.premium"
+    description: ["<gray>Für <green>PREMIUM<gray> und höher."]
+    items:
+      - {material: IRON_HELMET, name: "<green>PREMIUM-Helm", trim: {pattern: dune, material: copper}, enchants: {protection: 2, unbreaking: 2}}
+      - {material: IRON_CHESTPLATE, name: "<green>PREMIUM-Brustplatte", trim: {pattern: dune, material: copper}, enchants: {protection: 2, unbreaking: 2}}
+      - {material: IRON_LEGGINGS, name: "<green>PREMIUM-Hose", trim: {pattern: dune, material: copper}, enchants: {protection: 2, unbreaking: 2, swift_sneak: 3}}
+      - {material: IRON_BOOTS, name: "<green>PREMIUM-Stiefel", trim: {pattern: dune, material: copper}, enchants: {protection: 2, unbreaking: 2}}
+      - {material: DIAMOND_SWORD, name: "<green>PREMIUM-Schwert", enchants: {sharpness: 3, unbreaking: 2}}
+      - {material: DIAMOND_PICKAXE, name: "<green>PREMIUM-Spitzhacke", enchants: {efficiency: 3, fortune: 1, unbreaking: 2}}
+      - {material: DIAMOND_AXE, name: "<green>PREMIUM-Axt", enchants: {efficiency: 3, unbreaking: 2}}
+      - {material: GOLDEN_CARROT, amount: 32}
+      - {material: GOLDEN_APPLE, amount: 4}
+      - {material: EXPERIENCE_BOTTLE, amount: 16}
+      - {material: ENDER_PEARL, amount: 8}
+  elite:
+    name: "<gold><bold>ELITE-Kit"
+    icon: GOLDEN_APPLE
+    cooldown: 86400
+    permission: "smpcore.kit.elite"
+    description: ["<gray>Für <gold>ELITE<gray> und höher."]
+    items:
+      - {material: DIAMOND_HELMET, name: "<gold>ELITE-Helm", trim: {pattern: coast, material: gold}, enchants: {protection: 3, unbreaking: 2}}
+      - {material: DIAMOND_CHESTPLATE, name: "<gold>ELITE-Brustplatte", trim: {pattern: coast, material: gold}, enchants: {protection: 3, unbreaking: 2}}
+      - {material: DIAMOND_LEGGINGS, name: "<gold>ELITE-Hose", trim: {pattern: coast, material: gold}, enchants: {protection: 3, unbreaking: 2, swift_sneak: 3}}
+      - {material: DIAMOND_BOOTS, name: "<gold>ELITE-Stiefel", trim: {pattern: coast, material: gold}, enchants: {protection: 3, unbreaking: 2}}
+      - {material: DIAMOND_SWORD, name: "<gold>ELITE-Schwert", enchants: {sharpness: 4, looting: 2, unbreaking: 3}}
+      - {material: DIAMOND_PICKAXE, name: "<gold>ELITE-Spitzhacke", enchants: {efficiency: 4, fortune: 2, unbreaking: 3}}
+      - {material: GOLDEN_APPLE, amount: 8}
+      - {material: ENDER_PEARL, amount: 16}
+      - {material: EXPERIENCE_BOTTLE, amount: 32}
+  mvp:
+    name: "<#ff5555><bold>MVP-Kit"
+    icon: DIAMOND_PICKAXE
+    cooldown: 86400
+    permission: "smpcore.kit.mvp"
+    description: ["<gray>Für <#ff5555>MVP<gray> und höher."]
+    items:
+      - {material: DIAMOND_HELMET, name: "<#ff5555>MVP-Helm", trim: {pattern: sentry, material: redstone}, enchants: {protection: 4, unbreaking: 3, mending: 1, respiration: 3, aqua_affinity: 1}}
+      - {material: DIAMOND_CHESTPLATE, name: "<#ff5555>MVP-Brustplatte", trim: {pattern: sentry, material: redstone}, enchants: {protection: 4, unbreaking: 3, mending: 1}}
+      - {material: DIAMOND_LEGGINGS, name: "<#ff5555>MVP-Hose", trim: {pattern: sentry, material: redstone}, enchants: {protection: 4, unbreaking: 3, mending: 1, swift_sneak: 3}}
+      - {material: DIAMOND_BOOTS, name: "<#ff5555>MVP-Stiefel", trim: {pattern: sentry, material: redstone}, enchants: {protection: 4, unbreaking: 3, mending: 1, feather_falling: 4, depth_strider: 3}}
+      - {material: DIAMOND_SWORD, name: "<#ff5555>MVP-Schwert", enchants: {sharpness: 5, looting: 3, unbreaking: 3, mending: 1, sweeping_edge: 3}}
+      - {material: DIAMOND_PICKAXE, name: "<#ff5555>MVP-Spitzhacke", enchants: {efficiency: 5, fortune: 3, unbreaking: 3, mending: 1}}
+      - {material: DIAMOND_AXE, name: "<#ff5555>MVP-Axt", enchants: {efficiency: 5, sharpness: 5, unbreaking: 3, mending: 1}}
+      - {material: DIAMOND_SHOVEL, name: "<#ff5555>MVP-Schaufel", enchants: {efficiency: 5, fortune: 3, unbreaking: 3, mending: 1}}
+      - {material: GOLDEN_APPLE, amount: 16}
+      - {material: TOTEM_OF_UNDYING}
+      - {material: ENDER_PEARL, amount: 16}
+      - {material: EXPERIENCE_BOTTLE, amount: 64}
+  ultra:
+    name: "<#c040ff><bold>ULTRA-Kit"
+    icon: NETHERITE_SWORD
+    cooldown: 86400
+    permission: "smpcore.kit.ultra"
+    description: ["<gray>Für <#c040ff>ULTRA<gray> und höher."]
+    items:
+      - {material: NETHERITE_HELMET, name: "<#c040ff>ULTRA-Helm", trim: {pattern: ward, material: amethyst}, enchants: {protection: 4, unbreaking: 3, mending: 1, respiration: 3, aqua_affinity: 1}}
+      - {material: NETHERITE_CHESTPLATE, name: "<#c040ff>ULTRA-Brustplatte", trim: {pattern: ward, material: amethyst}, enchants: {protection: 4, unbreaking: 3, mending: 1}}
+      - {material: NETHERITE_LEGGINGS, name: "<#c040ff>ULTRA-Hose", trim: {pattern: ward, material: amethyst}, enchants: {protection: 4, unbreaking: 3, mending: 1, swift_sneak: 3}}
+      - {material: NETHERITE_BOOTS, name: "<#c040ff>ULTRA-Stiefel", trim: {pattern: ward, material: amethyst}, enchants: {protection: 4, unbreaking: 3, mending: 1, feather_falling: 4, depth_strider: 3}}
+      - {material: NETHERITE_SWORD, name: "<#c040ff>ULTRA-Schwert", enchants: {sharpness: 5, looting: 3, fire_aspect: 2, unbreaking: 3, mending: 1, sweeping_edge: 3}}
+      - {material: NETHERITE_PICKAXE, name: "<#c040ff>ULTRA-Spitzhacke", enchants: {efficiency: 5, fortune: 3, unbreaking: 3, mending: 1}}
+      - {material: NETHERITE_AXE, name: "<#c040ff>ULTRA-Axt", enchants: {efficiency: 5, sharpness: 5, unbreaking: 3, mending: 1}}
+      - {material: DIAMOND_BLOCK, amount: 8}
+      - {material: TOTEM_OF_UNDYING, amount: 2}
+      - {material: GOLDEN_APPLE, amount: 32}
+      - {material: ENCHANTED_GOLDEN_APPLE, amount: 2}
+      - {material: ENDER_PEARL, amount: 16}
+      - {material: EXPERIENCE_BOTTLE, amount: 64}
+  vip:
+    name: "<#55ccff><bold>VIP-Kit"
+    icon: NETHERITE_INGOT
+    cooldown: 86400
+    permission: "smpcore.kit.vip"
+    description: ["<gray>Das beste Spieler-Kit – für <#55ccff>VIP<gray>."]
+    items:
+      - {material: NETHERITE_HELMET, name: "<#55ccff>VIP-Helm", trim: {pattern: silence, material: quartz}, enchants: {protection: 4, unbreaking: 3, mending: 1, respiration: 3, aqua_affinity: 1}}
+      - {material: NETHERITE_CHESTPLATE, name: "<#55ccff>VIP-Brustplatte", trim: {pattern: silence, material: quartz}, enchants: {protection: 4, unbreaking: 3, mending: 1}}
+      - {material: NETHERITE_LEGGINGS, name: "<#55ccff>VIP-Hose", trim: {pattern: silence, material: quartz}, enchants: {protection: 4, unbreaking: 3, mending: 1, swift_sneak: 3}}
+      - {material: NETHERITE_BOOTS, name: "<#55ccff>VIP-Stiefel", trim: {pattern: silence, material: quartz}, enchants: {protection: 4, unbreaking: 3, mending: 1, feather_falling: 4, depth_strider: 3}}
+      - {material: NETHERITE_SWORD, name: "<#55ccff>VIP-Schwert", enchants: {sharpness: 5, looting: 3, fire_aspect: 2, unbreaking: 3, mending: 1, sweeping_edge: 3, knockback: 2}}
+      - {material: NETHERITE_PICKAXE, name: "<#55ccff>VIP-Spitzhacke", enchants: {efficiency: 5, fortune: 3, unbreaking: 3, mending: 1}}
+      - {material: NETHERITE_AXE, name: "<#55ccff>VIP-Axt", enchants: {efficiency: 5, sharpness: 5, unbreaking: 3, mending: 1}}
+      - {material: NETHERITE_SHOVEL, name: "<#55ccff>VIP-Schaufel", enchants: {efficiency: 5, fortune: 3, unbreaking: 3, mending: 1}}
+      - {material: BOW, name: "<#55ccff>VIP-Bogen", enchants: {power: 5, punch: 2, flame: 1, infinity: 1, unbreaking: 3}}
+      - {material: TOTEM_OF_UNDYING, amount: 3}
+      - {material: ENCHANTED_GOLDEN_APPLE, amount: 4}
+      - {material: GOLDEN_APPLE, amount: 32}
+      - {material: NETHERITE_INGOT, amount: 4}
+      - {material: ENDER_PEARL, amount: 16}
+      - {material: EXPERIENCE_BOTTLE, amount: 64}
+      - {material: ARROW}
+  pvp:
+    name: "<red><bold>PvP-Kit"
+    icon: SPLASH_POTION
+    cooldown: 43200
+    permission: "smpcore.kit.ultra"
+    description: ["<gray>Tränke & Gear für den Kampf.", "<gray>Für <#c040ff>ULTRA<gray> und höher."]
+    items:
+      - {material: POTION, amount: 2, name: "<red>Stärke II", effects: {strength: {seconds: 180, level: 2}}}
+      - {material: POTION, amount: 2, name: "<red>Schnelligkeit II", effects: {speed: {seconds: 180, level: 2}}}
+      - {material: POTION, amount: 2, name: "<red>Feuerresistenz", effects: {fire_resistance: {seconds: 480, level: 1}}}
+      - {material: POTION, amount: 2, name: "<red>Regeneration II", effects: {regeneration: {seconds: 45, level: 2}}}
+      - {material: SHIELD, name: "<red>PvP-Schild", enchants: {unbreaking: 3, mending: 1}}
+      - {material: CROSSBOW, name: "<red>PvP-Armbrust", enchants: {quick_charge: 3, piercing: 4, unbreaking: 3, mending: 1}}
+      - {material: ARROW, amount: 64}
+      - {material: GOLDEN_APPLE, amount: 16}
+      - {material: ENCHANTED_GOLDEN_APPLE, amount: 2}
+      - {material: TOTEM_OF_UNDYING, amount: 2}
+      - {material: ENDER_PEARL, amount: 16}
+      - {material: COOKED_BEEF, amount: 64}
+  staff:
+    name: "<red><bold>Mitarbeiter-Kit"
+    icon: NETHERITE_HELMET
+    cooldown: 21600
+    permission: "smpcore.kit.staff"
+    description: ["<gray>Voll verzaubertes Netherite: <white>alles auf Maximum<gray>.", "<gray>Nur für das Team."]
+    items:
+      - {material: NETHERITE_HELMET, name: "<red><bold>Mitarbeiter-Helm", lore: ["<gray>Mitarbeiter-Ausrüstung", "<dark_gray>Unzerstörbar"], unbreakable: true, trim: {pattern: bolt, material: gold}, enchants: {protection: 4, unbreaking: 3, mending: 1, thorns: 3, respiration: 3, aqua_affinity: 1}}
+      - {material: NETHERITE_CHESTPLATE, name: "<red><bold>Mitarbeiter-Brustplatte", lore: ["<gray>Mitarbeiter-Ausrüstung", "<dark_gray>Unzerstörbar"], unbreakable: true, trim: {pattern: bolt, material: gold}, enchants: {protection: 4, unbreaking: 3, mending: 1, thorns: 3}}
+      - {material: NETHERITE_LEGGINGS, name: "<red><bold>Mitarbeiter-Hose", lore: ["<gray>Mitarbeiter-Ausrüstung", "<dark_gray>Unzerstörbar"], unbreakable: true, trim: {pattern: bolt, material: gold}, enchants: {protection: 4, unbreaking: 3, mending: 1, thorns: 3, swift_sneak: 3}}
+      - {material: NETHERITE_BOOTS, name: "<red><bold>Mitarbeiter-Stiefel", lore: ["<gray>Mitarbeiter-Ausrüstung", "<dark_gray>Unzerstörbar"], unbreakable: true, trim: {pattern: bolt, material: gold}, enchants: {protection: 4, unbreaking: 3, mending: 1, thorns: 3, feather_falling: 4, depth_strider: 3, soul_speed: 3}}
+      - {material: NETHERITE_SWORD, name: "<red><bold>Mitarbeiter-Schwert", lore: ["<gray>Mitarbeiter-Ausrüstung", "<dark_gray>Unzerstörbar"], unbreakable: true, enchants: {sharpness: 5, looting: 3, fire_aspect: 2, knockback: 2, sweeping_edge: 3, unbreaking: 3, mending: 1}}
+      - {material: NETHERITE_AXE, name: "<red><bold>Mitarbeiter-Axt", lore: ["<gray>Mitarbeiter-Ausrüstung", "<dark_gray>Unzerstörbar"], unbreakable: true, enchants: {sharpness: 5, efficiency: 5, unbreaking: 3, mending: 1}}
+      - {material: NETHERITE_PICKAXE, name: "<red><bold>Mitarbeiter-Spitzhacke", lore: ["<gray>Mitarbeiter-Ausrüstung", "<dark_gray>Unzerstörbar"], unbreakable: true, enchants: {efficiency: 5, fortune: 3, unbreaking: 3, mending: 1}}
+      - {material: NETHERITE_SHOVEL, name: "<red><bold>Mitarbeiter-Schaufel", lore: ["<gray>Mitarbeiter-Ausrüstung", "<dark_gray>Unzerstörbar"], unbreakable: true, enchants: {efficiency: 5, fortune: 3, unbreaking: 3, mending: 1}}
+      - {material: NETHERITE_HOE, name: "<red><bold>Mitarbeiter-Hacke", lore: ["<gray>Mitarbeiter-Ausrüstung", "<dark_gray>Unzerstörbar"], unbreakable: true, enchants: {efficiency: 5, fortune: 3, unbreaking: 3, mending: 1}}
+      - {material: BOW, name: "<red><bold>Mitarbeiter-Bogen", lore: ["<gray>Mitarbeiter-Ausrüstung", "<dark_gray>Unzerstörbar"], unbreakable: true, enchants: {power: 5, punch: 2, flame: 1, infinity: 1, unbreaking: 3}}
+      - {material: CROSSBOW, name: "<red><bold>Mitarbeiter-Armbrust", lore: ["<gray>Mitarbeiter-Ausrüstung", "<dark_gray>Unzerstörbar"], unbreakable: true, enchants: {quick_charge: 3, piercing: 4, unbreaking: 3, mending: 1}}
+      - {material: TRIDENT, name: "<red><bold>Mitarbeiter-Dreizack", lore: ["<gray>Mitarbeiter-Ausrüstung", "<dark_gray>Unzerstörbar"], unbreakable: true, enchants: {loyalty: 3, impaling: 5, channeling: 1, unbreaking: 3, mending: 1}}
+      - {material: MACE, name: "<red><bold>Mitarbeiter-Streitkolben", lore: ["<gray>Mitarbeiter-Ausrüstung", "<dark_gray>Unzerstörbar"], unbreakable: true, enchants: {density: 5, fire_aspect: 2, unbreaking: 3, mending: 1}}
+      - {material: FISHING_ROD, name: "<red><bold>Mitarbeiter-Angel", lore: ["<gray>Mitarbeiter-Ausrüstung", "<dark_gray>Unzerstörbar"], unbreakable: true, enchants: {luck_of_the_sea: 3, lure: 3, unbreaking: 3, mending: 1}}
+      - {material: SHIELD, name: "<red><bold>Mitarbeiter-Schild", lore: ["<gray>Mitarbeiter-Ausrüstung", "<dark_gray>Unzerstörbar"], unbreakable: true, enchants: {unbreaking: 3, mending: 1}}
+      - {material: ARROW, amount: 64}
+      - {material: TOTEM_OF_UNDYING, amount: 3}
+      - {material: ENCHANTED_GOLDEN_APPLE, amount: 64}
+      - {material: GOLDEN_APPLE, amount: 64}
+      - {material: COOKED_BEEF, amount: 64}
+      - {material: ENDER_PEARL, amount: 16}
+      - {material: EXPERIENCE_BOTTLE, amount: 64}
+      - {material: WATER_BUCKET}
+      - {material: NETHERITE_INGOT, amount: 8}

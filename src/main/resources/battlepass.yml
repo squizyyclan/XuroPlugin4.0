@@ -1,0 +1,44 @@
+# Battle Pass: /battlepass (/bp). Quests geben Pass-XP, Level schalten Belohnungen frei.
+# Premium-Pass: kostet Gems (premium-cost-gems) oder Permission smpcore.battlepass.premium.
+enabled: true
+season: "Season 1"
+max-level: 30
+xp-per-level: 1000
+premium-cost-gems: 500
+premium-xp-bonus: 20      # % mehr Quest-XP mit Premium
+daily-quests: 3           # so viele zufällige Tages-Quests (für alle gleich, wechseln täglich)
+weekly-quests: 3
+
+# Belohnungs-Regeln: every = alle N Level, at = genau dieses Level.
+# Möglich: money, stars, gems, key (+ amount), command (+ label, %player%)
+rewards:
+  free:
+    - {every: 1, money: 2500}
+    - {every: 5, stars: 15}
+    - {every: 10, key: rare}
+    - {at: 30, key: legendary, amount: 2}
+  premium:
+    - {every: 1, money: 7500}
+    - {every: 3, stars: 20}
+    - {every: 5, gems: 25}
+    - {every: 10, key: epic}
+    - {at: 15, command: "tool give %player% hammer 1", label: "Hammer (3x3)"}
+    - {at: 30, command: "tool give %player% crystal_pickaxe 1", label: "Crystal-Spitzhacke", gems: 200}
+
+# Quest-Typen: BREAK (materials), KILL_MOB, KILL_PLAYER, FISH, PLAYTIME (Minuten), SELL ($ verkauft)
+quests:
+  daily:
+    - {id: stone, name: "Steinmetz", type: BREAK, materials: [STONE, COBBLESTONE, DEEPSLATE, COBBLED_DEEPSLATE], amount: 400, xp: 200}
+    - {id: ores, name: "Erzsucher", type: BREAK, materials: [COAL_ORE, IRON_ORE, GOLD_ORE, COPPER_ORE, DIAMOND_ORE, EMERALD_ORE, REDSTONE_ORE, LAPIS_ORE, DEEPSLATE_COAL_ORE, DEEPSLATE_IRON_ORE, DEEPSLATE_GOLD_ORE, DEEPSLATE_COPPER_ORE, DEEPSLATE_DIAMOND_ORE, DEEPSLATE_EMERALD_ORE, DEEPSLATE_REDSTONE_ORE, DEEPSLATE_LAPIS_ORE], amount: 40, xp: 250}
+    - {id: monsters, name: "Monsterjäger", type: KILL_MOB, amount: 30, xp: 200}
+    - {id: fish, name: "Angler", type: FISH, amount: 12, xp: 200}
+    - {id: playtime, name: "Dauerspieler", type: PLAYTIME, amount: 45, xp: 200}
+    - {id: sell, name: "Händler", type: SELL, amount: 50000, xp: 250}
+    - {id: logs, name: "Holzfäller", type: BREAK, materials: [OAK_LOG, BIRCH_LOG, SPRUCE_LOG, JUNGLE_LOG, ACACIA_LOG, DARK_OAK_LOG, MANGROVE_LOG, CHERRY_LOG], amount: 150, xp: 200}
+  weekly:
+    - {id: stone_w, name: "Großer Steinmetz", type: BREAK, materials: [STONE, COBBLESTONE, DEEPSLATE, COBBLED_DEEPSLATE], amount: 3000, xp: 900}
+    - {id: monsters_w, name: "Monsterschlächter", type: KILL_MOB, amount: 300, xp: 900}
+    - {id: pvp_w, name: "Kopfjäger", type: KILL_PLAYER, amount: 10, xp: 1000}
+    - {id: sell_w, name: "Großhändler", type: SELL, amount: 1000000, xp: 1000}
+    - {id: playtime_w, name: "Stammspieler", type: PLAYTIME, amount: 600, xp: 800}
+    - {id: fish_w, name: "Meisterangler", type: FISH, amount: 100, xp: 800}
